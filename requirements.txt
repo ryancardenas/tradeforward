@@ -1,0 +1,6 @@
+numpy==2.3.3 ; python_version >= "3.13"
+pandas==2.3.2 ; python_version >= "3.13"
+python-dateutil==2.9.0.post0 ; python_version >= "3.13"
+pytz==2025.2 ; python_version >= "3.13"
+six==1.17.0 ; python_version >= "3.13"
+tzdata==2025.2 ; python_version >= "3.13"
