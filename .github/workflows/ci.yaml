@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-precommit-
 
       - name: Run pre-commit hooks
-        run: pre-commit run --all-files
+        run: poetry run pre-commit run --all-files
 
   test-full:
     runs-on: ubuntu-latest
