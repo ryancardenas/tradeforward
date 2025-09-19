@@ -4,11 +4,16 @@ repos:
     hooks:
       - id: poetry-check
       - id: poetry-lock
+      - id: poetry-install
+  - repo: https://github.com/python-poetry/poetry-plugin-export
+    rev: 1.9.0
+    hooks:
       - id: poetry-export
+        name: poetry-export
         args: ["-f", "requirements.txt", "-o", "requirements.txt", "--without-hashes"]
       - id: poetry-export
+        name: poetry-export with dev
         args: ["-f", "requirements.txt", "-o", "requirements-dev.txt", "--with", "dev", "--without-hashes"]
-      - id: poetry-install
   - repo: https://github.com/psf/black
     rev: 25.9.0
     hooks:
